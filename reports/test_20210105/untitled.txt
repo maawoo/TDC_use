@@ -1,0 +1,12 @@
+Testing of: 
+- Chunk alignment
+
+The Landsat and Sentinel data have an additional pixel on the x and y axes (e.g. 10001x15001).
+With a size of 2500x3000 there would be 30 chunks in total, 10 of which only contain the additional pixels along the edge. 
+Alternative is using a size of 2501x3001 and 20 chunks, which should be a lot more efficient/faster. 
+
+https://docs.dask.org/en/latest/array-best-practices.html?highlight=chunk#select-a-good-chunk-size
+
+Results:
+- As expected 2501x3001 is a bit faster and the task streams looks a bit more efficient. 
+Doesn't make a big difference with the Landsat 8 data, but is probably important for the much bigger Sentinel-2 stack!
