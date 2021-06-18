@@ -21,7 +21,9 @@ Last modified: March 2021
 ========
 
 Source: https://github.com/GeoscienceAustralia/dea-notebooks/blob/4407ec801289fc07dd8d3a8ffe53854ee851b8b5/Tools/dea_tools/bandindices.py
-Modified for easier use with datasets that were processed with FORCE / ARDCube
+Modified for easier use with datasets that were processed with FORCE / ARDCube for the Thuringian Data Cube.
+https://github.com/maawoo/ARDCube
+
 Marco Wolsza (April 2021)
 
 '''
